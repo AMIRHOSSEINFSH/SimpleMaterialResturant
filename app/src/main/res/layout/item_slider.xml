@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layoutDirection="rtl"
+    android:padding="4dp"
+    android:background="@color/backGroundColor_Food"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/card_img"
+        app:cardBackgroundColor="@color/backGroundColor_Food"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="-55dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:layout_below="@id/card_img"
+        app:cardBackgroundColor="@color/color_other_background"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/name"
+                android:textSize="12sp"
+                android:textColor="@color/textColor_Food"
+                android:textStyle="bold"
+                android:text="نام غذا :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="italic"
+                android:lineSpacingExtra="6dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="2dp"
+                android:maxLines="2"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/name"
+                android:id="@+id/description"
+                android:text="یبلاتن"
+                android:textColor="@color/textColor_Food"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/layout_rating"
+                android:layout_below="@+id/description"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="4.9"
+                    android:textColor="@color/textColor_Food" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_marginRight="2dp"
+                    android:rating="4.9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_marginRight="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="(8.5K)"
+                    android:textColor="@color/textColor_Food" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_alignParentLeft="true"
+                app:tint="@android:color/holo_red_light"
+                app:srcCompat="@drawable/ic_baseline_favorite_24"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

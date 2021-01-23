@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/background_music"
+    android:layoutDirection="rtl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Part03.fragment.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layout_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:weightSum="2">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_weight="1"
+                        android:id="@+id/recyclerView_header_music"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_weight="1"
+                        android:id="@+id/recyclerView_header_album"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@id/layout_header"
+                    android:text="لیست پخش ها :"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/txt_color_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/recyclerView_play"
+                    android:layout_below="@+id/txt" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

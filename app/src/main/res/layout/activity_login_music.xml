@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/background_music"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".Part03.LoginMusicActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="32dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_rel_login"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginLeft="24dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:errorEnabled="true"
+            app:counterMaxLength="20"
+            app:counterEnabled="true"
+            app:helperTextEnabled="true"
+            app:helperText="****@gmail.com"
+            android:textColorHint="@color/txt_color_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:maxLength="20"
+                android:layoutDirection="rtl"
+                android:inputType="textEmailAddress"
+                android:paddingRight="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/txt_color_music"
+                android:textSize="12sp"
+                android:hint="نام کاربری"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginLeft="24dp"
+            app:passwordToggleTint="@color/txt_color_music"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:errorEnabled="true"
+            app:counterMaxLength="20"
+            app:counterEnabled="true"
+            app:helperTextEnabled="true"
+            app:helperText="****@gmail.com"
+            android:textColorHint="@color/txt_color_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:maxLength="20"
+                android:inputType="textPassword"
+                android:paddingRight="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/txt_color_music"
+                android:textSize="12sp"
+                android:hint="پسورد"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginLeft="24dp"
+
+            app:boxBackgroundMode="filled"
+            app:boxStrokeColor="@color/colorAccent_Music"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:errorEnabled="true"
+            app:counterMaxLength="20"
+            app:counterEnabled="true"
+            app:helperTextEnabled="true"
+            app:helperText="****@gmail.com"
+            android:textColorHint="@color/txt_color_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:maxLength="20"
+                android:layoutDirection="rtl"
+                android:inputType="phone"
+                android:paddingRight="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/txt_color_music"
+                android:textSize="12sp"
+                android:hint="تلفن همراه"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <io.ghyeok.stickyswitch.widget.StickySwitch-->
+<!--            android:layout_marginTop="32dp"-->
+<!--            android:id="@+id/sticky_switch"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:ss_animationDuration="600"-->
+<!--            app:ss_iconPadding="18dp"-->
+<!--            app:ss_iconSize="22dp"-->
+<!--            app:ss_leftIcon="@drawable/ic_baseline_done_all_24"-->
+<!--            app:ss_rightIcon="@drawable/ic_baseline_close_24"-->
+<!--            app:ss_selectedTextSize="14sp"-->
+<!--            app:ss_sliderBackgroundColor="@color/color_other_background"-->
+<!--            app:ss_switchColor="@color/colorAccent_Music"-->
+<!--            app:ss_animationType="line"/>-->
+
+        <Button
+            android:background="@drawable/bg_btn_login_music"
+            android:textSize="12sp"
+            android:text="ثبت نام"
+            android:textColor="@color/txt_color_music"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:id="@+id/img_go"
+            android:padding="4dp"
+            android:rotation="180"
+            app:tint="@color/colorAccent_Music"
+            app:srcCompat="@drawable/ic_baseline_arrow_forward_24"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="left"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/bg_go_home_music"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

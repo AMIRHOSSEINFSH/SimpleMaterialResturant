@@ -1,0 +1,53 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    //Part01 _ EBook
+    <style name="AppTheme_EBook" parent="Theme.AppCompat.Light.NoActionBar">
+
+    <item name="colorPrimary">@color/ColorPrimary_EBook</item>
+    <item name="colorAccent">@color/ColorAccent_EBook</item>
+    <item name="colorPrimaryDark">@color/ColorPrimaryDark_EBook</item>
+    <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    
+    <style name="BottomSheet_EBook" parent="Widget.Design.BottomSheet.Modal">
+        
+        <item name="android:background">@android:color/transparent</item>
+        
+    </style>
+
+    <style name="BottomSheet_EBook_Layout" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheet_EBook</item>
+    </style>
+
+    //part 02
+
+    <style name="AppTheme_Food" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#A30505</item>
+        <item name="colorAccent">@color/ColorAccent_Food</item>
+        <item name="android:textColorPrimary">#fff</item>
+    </style>
+
+    //part 03
+    <style name="AppTheme_Music" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/background_music</item>
+        <item name="colorAccent">@color/colorAccent_Music</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Music</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily">@font/font_app</item>
+        <item name="fontFamily">@font/font_app</item>
+    </style>
+
+
+</resources>

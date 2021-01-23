@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    android:padding="4dp">
+    <TextView
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:paddingVertical="2dp"
+        android:paddingHorizontal="8dp"
+        android:text="ویژه"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/ic_baseline_stars_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_other_background"
+        android:background="@drawable/bg_txt_for_you"
+         />
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="-1dp"
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:transitionName="img_book"
+                android:scaleType="centerCrop"
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/name"
+        android:maxLines="1"
+        android:textColor="@color/TextColor_EBook"
+        android:hint="name"
+        android:layout_below="@id/card"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"/>
+    <TextView
+        android:layout_marginTop="4dp"
+        android:id="@+id/author"
+        android:maxLines="1"
+        android:textColor="@color/TextColor_EBook"
+        android:hint="author"
+        android:layout_below="@id/name"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

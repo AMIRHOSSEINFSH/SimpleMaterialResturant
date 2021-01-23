@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Part02.HomeActivityFood"
+    android:layoutDirection="rtl"
+    android:background="@color/backGroundColor_Food"
+    tools:openDrawer="start">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/layout_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_header_food"
+                    android:padding="8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_baseline_menu_24"
+                        app:tint="@color/ColorAccent_Food" />
+
+                    <ImageView
+                        android:id="@+id/cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        app:srcCompat="@drawable/ic_baseline_shopping_cart_24"
+                        app:tint="@color/ColorAccent_Food" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/cart"
+                        app:srcCompat="@drawable/ic_baseline_search_24"
+                        app:tint="@color/ColorAccent_Food" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cart"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24dp"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                app:cardCornerRadius="8dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_centerInParent="true"
+                                        app:srcCompat="@drawable/ic_fast_food" />
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="8dp"
+                                android:text="فست فود"
+                                android:textColor="@color/textColor_Food"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                app:cardCornerRadius="8dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_centerInParent="true"
+                                        app:srcCompat="@drawable/ic_drink" />
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="8dp"
+                                android:text="نوشیدنی"
+                                android:textColor="@color/textColor_Food"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                app:cardCornerRadius="8dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_centerInParent="true"
+                                        app:srcCompat="@drawable/ic_vegetable" />
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="8dp"
+                                android:text="سبزیجات"
+                                android:textColor="@color/textColor_Food"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="56dp"
+                                android:layout_height="56dp"
+                                app:cardCornerRadius="8dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_centerInParent="true"
+                                        app:srcCompat="@drawable/ic_chicken_food" />
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="8dp"
+                                android:text="غذای ایرانی"
+                                android:textColor="@color/textColor_Food"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="8dp"
+                    android:id="@+id/recyclerView_Category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/layout_header">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@id/recyclerView_Category"
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+
+                <com.google.android.material.tabs.TabLayout
+                    app:tabIndicatorColor="@color/txt_color_music"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabBackground="@drawable/tabs_background"
+                    app:tabGravity="center"
+                    android:layout_below="@id/viewPager"
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:textColor="@color/textColor_Food"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/tabLayout"
+                    android:id="@+id/txt_type_food"
+                    android:text="انواع غذا ها :"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginHorizontal="8dp"
+                    android:id="@+id/recyclerView_type_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/txt_type_food"/>
+
+                <TextView
+                    android:id="@+id/txt_food_for_you"
+                    android:textColor="@color/textColor_Food"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/recyclerView_type_food"
+                    android:text="پیشنهاد ها :"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@android:color/holo_red_light"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/recyclerView_type_food"
+                    android:text="مشاهده همه"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_food_for_you"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_below="@+id/txt_food_for_you"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_food_new"
+                    android:textColor="@color/textColor_Food"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/recyclerView_food_for_you"
+                    android:text="جدیدترین ها :"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@android:color/holo_red_light"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/recyclerView_food_for_you"
+                    android:text="مشاهده همه"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/recyclerView_food_new"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_below="@+id/txt_food_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+
+
+</ScrollView>

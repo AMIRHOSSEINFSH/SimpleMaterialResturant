@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_music"
+    android:padding="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layoutDirection="rtl"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="4dp"
+        android:id="@+id/card_img"
+        app:cardBackgroundColor="@color/background_music"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="16dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginRight="-24dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#070F45"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/card_img"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize" >
+    <RelativeLayout
+        android:layout_marginRight="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name_song"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="آهنگ"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/txt_color_music" />
+
+        <TextView
+
+            android:layout_below="@id/name_song"
+            android:id="@+id/name"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="آنویسنده"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            android:textColor="@color/txt_color_music" />
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/time"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="04:22"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/txt_color_music" />
+
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="8dp"
+            app:tint="@color/txt_color_music"
+            android:layout_alignParentLeft="true"
+            app:srcCompat="@drawable/ic_baseline_play_circle_outline_24"
+            android:rotation="180"
+            android:layout_below="@id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

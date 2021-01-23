@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/transparent</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    //Part01 _ EBook
+    <color name="ColorPrimary_EBook">#AAD3F6</color>
+    <color name="ColorPrimaryDark_EBook">#020625</color>
+    <color name="ColorAccent_EBook">#218EED</color>
+    <color name="TextColor_EBook">#030C40</color>
+    <color name="color_other_background">#fff</color>
+    
+    //Part02 _ Food
+    <color name="ColorAccent_Food">#FDCF05</color>
+    <color name="textColor_Food">#020932</color>
+    <color name="backGroundColor_Food">#fDD7D7</color>
+    <color name="backGroundFood_other">#fff</color>
+
+    //Part03 _ Music
+    <color name="txt_color_music">#ffffff</color>
+    <color name="background_music">#0D0123</color>
+    <color name="colorPrimaryDark_Music">#090019</color>
+    <color name="colorAccent_Music">#FDD835</color>
+    
+</resources>

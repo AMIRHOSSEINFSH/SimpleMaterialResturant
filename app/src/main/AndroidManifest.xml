@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.materialdesign">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Part02.DetailFoodActivity"
+            android:theme="@style/AppTheme_Food" />
+
+        <activity
+            android:name=".Part02.HomeActivityFood"
+            android:theme="@style/AppTheme_Food" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Part03.PlayVideoMusicActivity"
+            android:theme="@style/AppTheme_Music" />
+        <activity
+            android:name=".Part03.PlayMusicActivity"
+            android:theme="@style/AppTheme_Music" />
+        <activity android:name=".Part03.HomeMusicActivity" />
+        <activity
+            android:name=".Part03.LoginMusicActivity"
+            android:theme="@style/AppTheme_Music" />
+
+        <activity
+            android:name=".SelectActivity"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TestActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".Part01.DetailBookActivity"
+            android:theme="@style/AppTheme_EBook" />
+        <activity
+            android:name=".Part01.Home_EBook_Activity"
+            android:theme="@style/AppTheme_EBook" />
+        <activity
+            android:name=".Part01.LoginBookActivity"
+            android:theme="@style/AppTheme_EBook" />
+        <activity android:name=".Part01.MainActivity" />
+    </application>
+
+</manifest>
